@@ -17,10 +17,10 @@ Extensive experiments and ablation studies on various datasets demonstrate the s
 The sequential graph provides an alternative way to organize users' sequential behaviors and the vectorization algorithm can promote the development of graph mining by retaining topological structures of complex graphs.
 
 ## Highlights
+
 - A sequential graph is introduced to reorganize all user-item interactions.
 - An algorithm is proposed to vectorize graph attention networks on complex graphs.
 - A personalized and transition-aware attention mechanism is proposed.
-- The proposed SGAT model explicitly captures collaborative and sequential information.
 
 ## Requirements
 
@@ -33,7 +33,7 @@ We provide TensorFlow implementations for SGAT model.
 **Note**:
 
 - The current code works well with TensorFlow 1.14
-- [RecKit](https://github.com/ZhongchuanSun/reckit) provides an efficient evaluator that is implemented with C++ code. 
+- [RecKit](https://github.com/ZhongchuanSun/reckit) provides an efficient evaluator that is implemented with C++ code.
 
 ## Run
 
