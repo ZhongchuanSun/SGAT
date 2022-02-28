@@ -15,13 +15,14 @@ Based on the sequential graph and the vectorization algorithm, SGAT infers each 
 Extensive experiments and ablation studies on various datasets demonstrate the superiority of SGAT.
 The sequential graph provides an alternative way to organize users' sequential behaviors and the vectorization algorithm can promote the development of graph mining by retaining topological structures of complex graphs.
 
-<center>
+<p align="center">
     <img src="fig/sgat_illustration.png" width="95%" /><br>
-    <b>Sequential Graph Attention Network</b><br>
-    <br>
+    <b>Sequential Graph Attention Network</b>
+</p>
+<p align="center">
     <img src="fig/att_vec_illustration.png" width="55%" /><br>
-    <b>Generic Vectorization Algorithm</b><br>
-</center>
+    <b>Generic Vectorization Algorithm</b>
+</p>
 
 ## Highlights
 
