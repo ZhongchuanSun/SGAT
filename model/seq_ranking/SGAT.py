@@ -65,11 +65,11 @@ class SGAT(AbstractRecommender):
     def _process_test(self):
         item_seqs = [self.user_pos_train[user][-self.n_seqs:] if user in self.user_pos_train else [self.items_num]
                      for user in range(self.users_num)]
-        for user in range(self.users_num):
-            if user in self.user_pos_train:
-                item_seqs.append(self.user_pos_train[user][-self.n_seqs:])
-            else:
-                item_seqs.append([self.items_num])
+        # for user in range(self.users_num):
+        #     if user in self.user_pos_train:
+        #         item_seqs.append(self.user_pos_train[user][-self.n_seqs:])
+        #     else:
+        #         item_seqs.append([self.items_num])
 
         self.test_item_seqs = pad_sequences(item_seqs, value=self.items_num, max_len=self.n_seqs,
                                             padding='pre', truncating='pre', dtype=np.int32)
